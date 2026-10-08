@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КонсалтПро — панель управления консалтинговыми услугами</title>
+  <meta name="description" content="КонсалтПро — десктоп- и мобильное приложение для управления каталогом консалтинговых услуг и заявками с общей облачной базой данных.">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231b5e20'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial'>KP</text></svg>">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">
+        <span class="logo__mark">KP</span>
+        <span class="logo__text">КонсалтПро</span>
+      </a>
+      <nav class="nav">
+        <a href="#features">Возможности</a>
+        <a href="#screens">Скриншоты</a>
+        <a href="#download">Скачать</a>
+        <a href="#about">О проекте</a>
+      </nav>
+      <a class="btn btn--small" href="#download">Скачать</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__badge">Учебный проект · десктоп + Android + облако</p>
+          <h1>Панель управления<br>консалтинговыми услугами</h1>
+          <p class="hero__lead">
+            Каталог услуг с ценами и характеристиками, заявки клиентов,
+            отчёты в Excel и TXT. Десктоп-приложение для ПК, мобильное
+            приложение для Android и единая база данных в облаке —
+            данные синхронизируются между устройствами.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" id="hero-win" href="#download">
+              Скачать для Windows
+            </a>
+            <a class="btn btn--ghost" id="hero-apk" href="#download">
+              Скачать APK
+            </a>
+          </div>
+          <p class="hero__note">
+            Последняя версия: <span id="release-tag">—</span> ·
+            <a id="releases-link" href="#" target="_blank" rel="noopener">все релизы на GitHub</a>
+          </p>
+        </div>
+        <div class="hero__art">
+          <img src="assets/desktop.png" alt="Десктоп-приложение КонсалтПро" class="hero__shot">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Возможности</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">🖥</div>
+            <h3>Десктоп-приложение</h3>
+            <p>
+              Windows-приложение на Python: каталог из 110 услуг с фильтрами
+              по каждому столбцу, управление заявками, отчёты
+              «Услуги по категориям», «Заявки за период», «Доход по категориям»
+              в форматах Excel и TXT.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__icon">📱</div>
+            <h3>Мобильное приложение</h3>
+            <p>
+              Android-приложение на Flet: поиск и фильтры каталога,
+              карточка услуги с описанием, оформление заявки в пару касаний,
+              список заявок со статусами и раздел статистики.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__icon">☁️</div>
+            <h3>Синхронизация через облако</h3>
+            <p>
+              Обе программы работают с одной базой данных MySQL в облаке:
+              заявка, созданная на телефоне, сразу видна на ПК, а изменение
+              статуса на ПК мгновенно появляется в мобильном приложении.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="screens">
+      <div class="container">
+        <h2>Скриншоты</h2>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/desktop.png" alt="Десктоп: каталог услуг">
+            <figcaption>Десктоп — каталог услуг с фильтрами</figcaption>
+          </figure>
+          <figure class="shot shot--phone">
+            <img src="assets/mobile.png" alt="Мобильное: каталог услуг">
+            <figcaption>Android — каталог услуг</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="container">
+        <h2>Скачать</h2>
+        <p class="section__lead">
+          Все сборки размещены в релизах GitHub.
+        </p>
+        <div class="download">
+          <div class="download__item">
+            <h3>Windows</h3>
+            <p class="download__meta">ConsaltPro.exe · Windows 10/11 · ~35 МБ</p>
+            <p class="download__desc">
+              Запускается без установки. Для работы нужен доступ в интернет
+              (облачная база данных).
+            </p>
+            <a class="btn btn--primary" id="dl-win" href="#" download>
+              Скачать .exe
+            </a>
+          </div>
+          <div class="download__item">
+            <h3>Android</h3>
+            <p class="download__meta">ConsaltPro.apk · Android 7.0+ · ~30 МБ</p>
+            <p class="download__desc">
+              Установка из файла APK. Для работы нужен доступ в интернет
+              (облачная база данных).
+            </p>
+            <a class="btn btn--primary" id="dl-apk" href="#" download>
+              Скачать .apk
+            </a>
+          </div>
+          <div class="download__item">
+            <h3>Исходный код</h3>
+            <p class="download__meta">Python · Flet · MySQL</p>
+            <p class="download__desc">
+              Схема и наполнение базы данных, исходники десктоп- и
+              мобильного приложения, этот сайт.
+            </p>
+            <a class="btn btn--ghost" id="dl-src" href="#" target="_blank" rel="noopener">
+              Открыть на GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <h2>О проекте</h2>
+        <div class="about">
+          <p>
+            <strong>КонсалтПро</strong> — информационная система для
+            консалтинговой компании: справочник услуг с категориями, ценами,
+            единицами измерения и сроками оказания; заявки клиентов
+            с рабочим процессом (новая → в работе → завершена/отменена);
+            аналитика и отчёты.
+          </p>
+          <ul class="about__list">
+            <li><strong>Стек:</strong> Python 3.13, CustomTkinter, Flet, MySQL (Clever Cloud), PyInstaller, Gradle/Android SDK</li>
+            <li><strong>Данные:</strong> 110 услуг в 6 категориях, 50 заявок, фильтры по каждому полю</li>
+            <li><strong>Разработка:</strong> десктоп, мобильное приложение, база данных, сайт и отчёт</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> КонсалтПро — учебный проект по дисциплине «Учебная практика»</p>
+      <p class="footer__links">
+        <a id="foot-repo" href="#" target="_blank" rel="noopener">Репозиторий</a>
+        ·
+        <a id="foot-releases" href="#" target="_blank" rel="noopener">Релизы</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
